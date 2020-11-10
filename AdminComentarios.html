@@ -44,7 +44,7 @@
             function mostrarComentarios(){
                 
                 var id= sessionStorage.id //  proviene de administrador.html
-                fetch(`http://127.0.0.1:8000/Comentarios/${id}`,
+                fetch(`https://proyecto2ipc12020.herokuapp.com//Comentarios/${id}`,
 
                 ).then(response => response.json()
                 ).catch(err =>{
@@ -82,7 +82,7 @@
 
             function mostrarPerfil(){
             
-                fetch('http://127.0.0.1:8000/Admin',
+                fetch('https://proyecto2ipc12020.herokuapp.com//Admin',
 
                 ).then(response => response.json()
                 ).catch(err =>{

@@ -65,7 +65,7 @@
             }
 
             function mostrarCliente(){
-                fetch('http://127.0.0.1:8000/Usuarios',
+                fetch('https://proyecto2ipc12020.herokuapp.com//Usuarios',
 
                 ).then(response => response.json()
                 ).catch(err =>{
@@ -91,7 +91,7 @@
                  
                  var carga = sessionStorage.usuario //.usuario // proviene de inicio.html 
                  
-                 fetch(`http://127.0.0.1:8000/Usuarios/${carga}`, // 
+                 fetch(`https://proyecto2ipc12020.herokuapp.com//Usuarios/${carga}`, // 
      
                  ).then(response => response.json()
                  ).catch(err =>{
@@ -123,7 +123,7 @@
                     
                 }
 
-                fetch(`http://127.0.0.1:8000/ModificarUsuario/${usuario}`,{
+                fetch(`https://proyecto2ipc12020.herokuapp.com//ModificarUsuario/${usuario}`,{
 
                     
                     method : 'PUT',

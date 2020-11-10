@@ -48,7 +48,7 @@
 
           function mostrarPerfil(){
             
-            fetch('http://127.0.0.1:8000/Admin',
+            fetch('https://proyecto2ipc12020.herokuapp.com//Admin',
 
             ).then(response => response.json()
             ).catch(err =>{
@@ -70,7 +70,7 @@
           }
 
           function Perfil(){
-            fetch('http://127.0.0.1:8000/Admin', // proviene de administrador.html
+            fetch('https://proyecto2ipc12020.herokuapp.com//Admin', // proviene de administrador.html
         
             ).then(response => response.json()
             ).catch(err =>{
@@ -87,7 +87,7 @@
               
           }
           function mostrarCanciones(){
-            fetch('http://127.0.0.1:8000/Canciones',
+            fetch('https://proyecto2ipc12020.herokuapp.com//Canciones',
 
             ).then(response => response.json()
             ).catch(err =>{
@@ -152,7 +152,7 @@
                         'id' : id
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Canciones/${id}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Canciones/${id}`,{
 
                         
                         method : 'DELETE',

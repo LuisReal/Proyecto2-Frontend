@@ -59,7 +59,7 @@
                     
                     var id = sessionStorage.buscar // proviene de administrador.html // mostrarPerfil
                     
-                    fetch(`http://127.0.0.1:8000/Canciones/${id}`, // proviene de administrador.html
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Canciones/${id}`, // proviene de administrador.html
         
                     ).then(response => response.json()
                     ).catch(err =>{
@@ -98,7 +98,7 @@
                         'youtube' : youtube
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Canciones/${id}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Canciones/${id}`,{
         
                         
                         method : 'PUT',
@@ -128,7 +128,7 @@
                         
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Canciones/${nombre}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Canciones/${nombre}`,{
         
                         
                         method : 'DELETE',

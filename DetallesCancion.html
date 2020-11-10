@@ -50,7 +50,7 @@
 
                 var detalles = sessionStorage.detalles
 
-                fetch('http://127.0.0.1:8000/Canciones',
+                fetch('https://proyecto2ipc12020.herokuapp.com//Canciones',
 
                 ).then(response => response.json()
                 ).catch(err =>{
@@ -76,7 +76,7 @@
 
                     var detalles = sessionStorage.detalles // contiene el id
 
-                    fetch('http://127.0.0.1:8000/Canciones',
+                    fetch('https://proyecto2ipc12020.herokuapp.com//Canciones',
 
                     ).then(response => response.json()
                     ).catch(err =>{
@@ -105,7 +105,7 @@
 
                 var detalles = sessionStorage.detalles // contiene el id
 
-                fetch('http://127.0.0.1:8000/Comentarios',
+                fetch('https://proyecto2ipc12020.herokuapp.com//Comentarios',
 
                 ).then(response => response.json()
                 ).catch(err =>{
@@ -131,7 +131,7 @@
                 })
             }
                 function mostrarCliente(){
-                    fetch('http://127.0.0.1:8000/Usuarios',
+                    fetch('https://proyecto2ipc12020.herokuapp.com//Usuarios',
 
                     ).then(response => response.json()
                     ).catch(err =>{
@@ -165,7 +165,7 @@
                         'usuario' : usuario
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Comentarios/${id}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Comentarios/${id}`,{
         
                         
                         method : 'POST',

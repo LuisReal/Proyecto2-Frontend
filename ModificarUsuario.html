@@ -59,7 +59,7 @@
 
                 function mostrarDatos(){
                             
-                    fetch('http://127.0.0.1:8000/Admin',
+                    fetch('https://proyecto2ipc12020.herokuapp.com//Admin',
 
                     ).then(response => response.json()
                     ).catch(err =>{
@@ -83,7 +83,7 @@
                     
                     var cargar = sessionStorage.buscar_usuario // proviene de TablaUsuarios.html mostrarPerfil()
 
-                    fetch(`http://127.0.0.1:8000/Usuarios/${cargar}`, // proviene de administrador.html
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Usuarios/${cargar}`, // proviene de administrador.html
 
                     ).then(response => response.json()
                     ).catch(err =>{
@@ -114,7 +114,7 @@
                         'contrasena' : contrasena
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Usuarios/${cargar}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Usuarios/${cargar}`,{
 
                         
                         method : 'PUT',
@@ -144,7 +144,7 @@
                         
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Usuarios/${nombre}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Usuarios/${nombre}`,{
 
                         
                         method : 'DELETE',

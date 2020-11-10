@@ -37,7 +37,7 @@
         <script>
 
             function MostrarSolicitudes(){
-                fetch('http://127.0.0.1:8000/Solicitud',
+                fetch('https://proyecto2ipc12020.herokuapp.com//Solicitud',
 
                 ).then(response => response.json()
                 ).catch(err =>{
@@ -71,7 +71,7 @@
                         'id' : id
                     }
                     
-                    fetch(`http://127.0.0.1:8000/AgregarSolicitud/${id}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//AgregarSolicitud/${id}`,{
 
                         
                         method : 'POST',
@@ -102,7 +102,7 @@
                         
                     }
                     
-                    fetch(`http://127.0.0.1:8000/Solicitud/${id}`,{
+                    fetch(`https://proyecto2ipc12020.herokuapp.com//Solicitud/${id}`,{
         
                         
                         method : 'DELETE',
@@ -133,7 +133,7 @@
 
             function mostrarPerfil(){
             
-                fetch('http://127.0.0.1:8000/Admin',
+                fetch('https://proyecto2ipc12020.herokuapp.com//Admin',
 
                 ).then(response => response.json()
                 ).catch(err =>{
